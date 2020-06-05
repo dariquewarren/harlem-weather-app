@@ -1,4 +1,7 @@
 body {
+    
+    background-color: rgb(49, 26, 182);
+
     color:#333333;
     font-family: arial;
     max-width: 650px;
@@ -14,8 +17,16 @@ body {
     flex-grow: 1 ;
 }
 
- p {
-color: #123456;
+ .paragraph {
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: #ff702e;
+border-top: 1px solid #eeeeee;  
+margin-top: 16px;
+padding: 16px; 
+}
+p {
+    font-family: fantasy;
+color: #090e0f;
 border-top: 1px solid #eeeeee;  
 margin-top: 16px;
 padding: 16px; 
@@ -32,7 +43,7 @@ h1 {
 }
 
  header a {
-    color: #888888;
+    color: #581a1a;
     margin-right: 16px;
     text-decoration: none;
 }
@@ -48,8 +59,14 @@ input {
 
 button {
     cursor: pointer;
-    border: 1px solid #888888;
-    background: #888888;
-    color: white;
+    border: 1px dashed #888888;
+    background: #581a1a;
+    color: rgb(21, 121, 107);
     padding: 8px;
 }
+
+.bg-blue{
+    color: rgb(52, 25, 116);
+    background: rgb(152, 176, 230);
+}
+
