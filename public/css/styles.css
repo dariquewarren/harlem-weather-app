@@ -1,6 +1,6 @@
 body {
     
-    background-color: rgb(49, 26, 182);
+    background-color: rgb(150, 137, 137);
 
     color:#333333;
     font-family: arial;
@@ -19,13 +19,13 @@ body {
 
  .paragraph {
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-color: #ff702e;
+color: #5f260b;
 border-top: 1px solid #eeeeee;  
 margin-top: 16px;
 padding: 16px; 
 }
 p {
-    font-family: fantasy;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 color: #090e0f;
 border-top: 1px solid #eeeeee;  
 margin-top: 16px;
@@ -59,9 +59,9 @@ input {
 
 button {
     cursor: pointer;
-    border: 1px dashed #888888;
+    border: 1px dashed #0f0c0c;
     background: #581a1a;
-    color: rgb(21, 121, 107);
+    color: rgb(202, 153, 153);
     padding: 8px;
 }
 
