@@ -4,8 +4,11 @@ const searchElement = document.querySelector('input')
 const messageOne = document.querySelector('#message-1')
 const messageTwo = document.querySelector('#message-2')
 
-messageOne.textContent = `From JavaScript`
+messageOne.textContent = `Brought to you by JavaScript, handlebars, APIs, ExpressJS, and Mr. Darique D. Warren`
+/*
+Brought to you by JavaScript, handlebars, APIs, async/await, and Mr. Darique D. Warren
 
+*/
 weatherForm.addEventListener('submit', (e)=>{
 e.preventDefault()
 
