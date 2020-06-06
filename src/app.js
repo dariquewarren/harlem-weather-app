@@ -47,7 +47,7 @@ res.render('help', {
 app.get('/weather', (req, res)=>{
     if(!req.query.address){
         return res.send({
-            error: 'please provide an address'
+            error: 'OOPS! UNABLE TO FIND. TRY AGAIN '
         })
     } else {
         geocode(req.query.address, (error, {latitude, longitude, location}={})=>{
@@ -88,7 +88,7 @@ app.get('/weather', (req, res)=>{
  app.get('/products', (req, res)=>{
      if (!req.query.search) {
       return  res.send({
-            error: 'you must provide a search term'
+            error: 'SEARCH TERM REQUIRED'
         })
      }
    console.log(req.query.search)
