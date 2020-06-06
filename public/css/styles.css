@@ -1,7 +1,6 @@
 body {
     
-    background-color: rgb(150, 137, 137);
-
+    background-color: blanchedalmond;
     color:#333333;
     font-family: arial;
     max-width: 650px;
@@ -61,7 +60,7 @@ button {
     cursor: pointer;
     border: 1px dashed #0f0c0c;
     background: #581a1a;
-    color: rgb(202, 153, 153);
+    color: rgb(170, 144, 144);
     padding: 8px;
 }
 
