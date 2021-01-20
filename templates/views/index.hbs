@@ -19,17 +19,32 @@
 
 <body>
     
-    <div class="main-content">
+    <div >
        {{>header}} 
-       <p>WEATHER FOR PEOPLE IN A HURRY</p>
-       <p >Enter location or zipcode for quick forecast</p>
-       <form>
+              <p id='weatherLocation'></p>
+
+       <img id="weatherImage" class="w-20 bg-dark">
+<div id='mainDiv' >
+
+   <p >Enter location or zipcode for quick forecast</p>
+
+</div>
+  <form>
            <input placeholder="Location">
            <button>Let's Go!</button>
        </form>
+    
+    
 
-       <p id="message-1" class="paragraph"></p>
-       <p id="message-2" class="paragraph"></p>
+       </div>
+        
+     
+       <details >
+<summary id='detailedInfoSummary' >Detailed weather info</summary>
+<ul id='detailedInfo'>
+
+</ul>
+       </details>
     </div>
     <a href="https://github.com/dariquewarren/harlem-weather-app">PROJECT CODE</a>
 

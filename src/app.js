@@ -21,7 +21,7 @@ hbs.registerPartials(partialsPath)
 // SETUP STATIC DIRECTORY TO SERVE
 app.use(express.static(publicDirectoryPath))
 
-app.get('', (req, res)=>{
+app.get('/', (req, res)=>{
     res.render('index', {
         title: 'Quick Weather',
         name: 'Darique D. Warren'
@@ -57,7 +57,7 @@ app.get('/weather', (req, res)=>{
                 })
             }
     
-            forecast(latitude, longitude, (error, {description, temperature, precipitation, humidity, feelsLike}={}) => {
+            forecast(latitude, longitude, (error, {description, temperature, precipitation, humidity, feelsLike, currentObj}={}) => {
                 if (error) {
                     return res.send({
                         error: error
@@ -68,7 +68,8 @@ app.get('/weather', (req, res)=>{
                     res.send( {
             forecast: ` Although it feels like ${feelsLike} degrees, it is ${temperature} degrees out and ${description} with ${humidity} humidity. There is a ${precipitation}% chance of rain.`,
             location: location,
-            address: req.query.address
+            address: req.query.address,
+            body: currentObj
         })
                 }
             

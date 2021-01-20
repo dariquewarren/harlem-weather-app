@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
+    "handlebars": "^4.7.6",
     "hbs": "^4.0.1",
     "request": "^2.88.0",
     "require": "^2.4.20",

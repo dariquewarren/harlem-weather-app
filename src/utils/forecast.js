@@ -32,7 +32,9 @@ const url =  `http://api.weatherstack.com/current?access_key=9fdf17fc0144d6830d2
                 temperature: body.current.temperature,
                 precipitation: body.current.precip,
                 humidity: body.current.humidity,
-                feelsLike: body.current.feelslike
+                feelsLike: body.current.feelslike,
+                // grabs the entire body object
+                currentObj: body.current
             }) 
         }
     })
